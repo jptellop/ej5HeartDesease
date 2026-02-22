@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df=pd.read_csv('/content/sample_data/heart.csv')
+df=pd.read_csv('heart.csv')
 plt.figure(figsize=(8, 6))
 sns.boxplot(data=df, x='Sex', y='Cholesterol', hue='Sex', palette={'M': 'skyblue', 'F': 'lightcoral'}, legend=False)
 plt.title('Distribución de Colesterol por Sexo')
