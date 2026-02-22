@@ -1,7 +1,7 @@
 # writefile app.py
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.set_page_config(layout="wide") # Optional: to use a wide layout by default
@@ -32,7 +32,7 @@ numerical_df = df[numerical_cols]
 correlation_matrix = numerical_df.corr()
 
 # Plotting the heatmap
-fig, ax = plt.subplots(figsize=(10, 8))
+#fig, ax = plt.subplots(figsize=(10, 8))
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", ax=ax)
 ax.set_title('Correlation Matrix of Numerical Features')
 st.pyplot(fig)
